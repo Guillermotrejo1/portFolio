@@ -14,22 +14,22 @@ export const Nav = () => {
           alt='Logo'/>
       </div>
       <ul className='flex gap-4 font-bold text-md space-x-4'>
-      <li className=' hover:scale-150 transition-all duration-300 ease-out'>
+      <li className='hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out'>
         <Link href="/">
         About
         </Link>
         </li>
-      <li className=' hover:scale-150 transition-all duration-300 ease-out'>
+      <li className='hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out'>
         <Link href="/">
         Projects
         </Link>
         </li>
-      <li className=' hover:scale-150 transition-all duration-300 ease-out'>
+      <li className='hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out'>
         <Link href="/">
         Tech
         </Link>
         </li>
-      <li className=' hover:scale-150 transition-all duration-300 ease-out'>
+      <li className='hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out'>
         <Link href="/">
         Contact
         </Link>
