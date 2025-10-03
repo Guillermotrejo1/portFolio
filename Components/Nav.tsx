@@ -7,11 +7,11 @@ export const Nav = () => {
     <nav className="flex justify-between items-center px-4 lg:max-w-[1280px] mb-4">
       <div className='shrink-0 sticky'>
       <Image
-        className='pl-4 pt-4 object-contain'
+        className='pl-4 pt-4 object-contain filter invert'
          src="/logo.svg"
          width={150}
          height={150}
-          alt='Logo'/>
+         alt='Logo'/>
       </div>
       <ul className='flex gap-4 font-bold text-md space-x-4'>
       <li className='hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out'>
