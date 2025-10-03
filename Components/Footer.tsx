@@ -15,7 +15,7 @@ export const Footer = () => {
             <Link className="text-white gap-4 hover:scale-125 transition-all duration-300 ease-out hover:text-green-500" href="https://github.com/Guillermotrejo1">GitHub</Link>
             <Link className="text-white gap-4 hover:scale-125 transition-all duration-300 ease-out hover:text-green-500" href="https://www.linkedin.com/in/guillermo-trejo-8a5797318">LinkedIn</Link>
             <Link className="text-white gap-4 hover:scale-125 transition-all duration-300 ease-out hover:text-green-500" href="/">Contact</Link>
-            <Link className="text-white gap-4 hover:scale-125 transition-all duration-300 ease-out hover:text-green-500" href="/">Resume</Link>
+            <Link className="text-white gap-4 hover:scale-125 transition-all duration-300 ease-out hover:text-green-500" href="https://docs.google.com/document/d/1kL50Jt0I6c4yjiWplSOFyXCfCZph5x9I/edit?usp=sharing&ouid=117883606353969352178&rtpof=true&sd=true">Resume</Link>
           </div>
           <div className="text-white text-sm">Copyright © 2024 Guillermo Trejo</div>
         </div>
