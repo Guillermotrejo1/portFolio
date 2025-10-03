@@ -51,7 +51,7 @@ export const Hero = () => {
             src="/ME.jpg"
             alt="Me"
             width={500}
-            height={500} //make the image smaller on smaller screens
+            height={500}
           />
         </div>
       </div>
