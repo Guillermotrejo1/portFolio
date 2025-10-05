@@ -23,7 +23,7 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-[120px] text-white/90">
+                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
                     Lingo
                   </h3>
                   <h4 className="text-white/90 font-bold text-lg mb-1">
@@ -58,7 +58,7 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-[120px] text-white/90">
+                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
                     Creations
                   </h3>
                   <h4 className="text-white/90 font-bold text-lg mb-1">
@@ -93,7 +93,7 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-[120px] text-white/90">
+                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
                     Internship
                   </h3>
                   <h4 className="text-white/90 font-bold text-lg mb-1">
@@ -128,7 +128,7 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-[120px] text-white/90">
+                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
                     Netflix
                   </h3>
                   <h4 className="text-white/90 font-bold text-lg mb-1">
@@ -163,7 +163,7 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-[120px] text-white/90">
+                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
                     Summarist
                   </h3>
                   <h4 className="text-white/90 font-bold text-lg mb-1">
@@ -198,7 +198,7 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-[120px] text-white/90">
+                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
                     Skinstric
                   </h3>
                   <h4 className="text-white/90 font-bold text-lg mb-1">

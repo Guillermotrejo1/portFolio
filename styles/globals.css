@@ -16,11 +16,15 @@
   }
 }
 
+
+
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Montserrat', sans-serif;
 }
+
 
 @layer utilities {
   .text-balance {

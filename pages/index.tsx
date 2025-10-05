@@ -6,7 +6,7 @@ import { Stack } from "@/Components/Stack";
 
 export default function Home() {
   return (
-   <div>
+   <div className="w-full overflow-x-hidden">
     <Nav />
     <Hero/>
     <Projects />
