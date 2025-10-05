@@ -106,7 +106,7 @@ export const TechStack = () => {
           </div>
           <div className="group flex flex-col items-center h-48">
             <Image
-              src="/javaScript.png"
+              src="/JavaScript.png"
               alt=""
               className="hover:scale-110 transition-all duration-300 ease-out rounded-xl"
               width={100}
