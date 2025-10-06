@@ -17,11 +17,8 @@
 }
 
 
-
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: black;
   font-family: 'Montserrat', sans-serif;
 }
 
