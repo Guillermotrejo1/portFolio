@@ -58,9 +58,9 @@ export const TechStack = () => {
           </div>
           <div className="group flex flex-col items-center h-48">
             <Image
-              src="/nextjs.png"
+              src="/NEXTJS.jpeg"
               alt=""
-              className="hover:scale-110 transition-all duration-300 ease-out"
+              className="hover:scale-110 transition-all duration-300 ease-out rounded-sm"
               width={100}
               height={100}
             />
