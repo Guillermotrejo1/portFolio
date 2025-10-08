@@ -22,19 +22,18 @@ export const Projects = () => {
                 />
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
-                <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
+                <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
+                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
                     Lingo
                   </h3>
-                  <h4 className="text-white/90 font-bold text-lg mb-1">
+                  <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold text-md">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Necessitatibus deleniti fugiat quo reiciendis voluptatem
                     itaque, labore assumenda aut quisquam ab.
                   </p>
-                  <div className="mb-2">html, tailwind, stripe, drizzle</div>
                   <div className="absolute flex text-white">
                     <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
                       <FaGithub />
@@ -57,19 +56,18 @@ export const Projects = () => {
                 />
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
-                <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
+                <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
+                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
                     Creations
                   </h3>
-                  <h4 className="text-white/90 font-bold text-lg mb-1">
+                  <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold text-md">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Necessitatibus deleniti fugiat quo reiciendis voluptatem
                     itaque, labore assumenda aut quisquam ab.
                   </p>
-                  <div className="mb-2">html, tailwind, stripe, drizzle</div>
                   <div className="absolute flex text-white/90">
                     <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
                       <FaGithub />
@@ -92,19 +90,18 @@ export const Projects = () => {
                 />
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
-                <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
+                <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
+                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
                     Internship
                   </h3>
-                  <h4 className="text-white/90 font-bold text-lg mb-1">
+                  <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold text-md">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Necessitatibus deleniti fugiat quo reiciendis voluptatem
                     itaque, labore assumenda aut quisquam ab.
                   </p>
-                  <div className="mb-2">html, tailwind, stripe, drizzle</div>
                   <div className="absolute flex text-white/90">
                     <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
                       <FaGithub />
@@ -127,19 +124,18 @@ export const Projects = () => {
                 />
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
-                <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
+                <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
+                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
                     Netflix
                   </h3>
-                  <h4 className="text-white/90 font-bold text-lg mb-1">
+                  <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold text-md">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Necessitatibus deleniti fugiat quo reiciendis voluptatem
                     itaque, labore assumenda aut quisquam ab.
                   </p>
-                  <div className="mb-2">html, tailwind, stripe, drizzle</div>
                   <div className="absolute flex text-white/90">
                     <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
                       <FaGithub />
@@ -162,19 +158,18 @@ export const Projects = () => {
                 />
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
-                <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
+                <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
+                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
                     Summarist
                   </h3>
-                  <h4 className="text-white/90 font-bold text-lg mb-1">
+                  <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold text-md">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Necessitatibus deleniti fugiat quo reiciendis voluptatem
                     itaque, labore assumenda aut quisquam ab.
                   </p>
-                  <div className="mb-2">html, tailwind, stripe,</div>
                   <div className="absolute flex text-white/90">
                     <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
                       <FaGithub />
@@ -197,19 +192,18 @@ export const Projects = () => {
                 />
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
-                <div className="text-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm lg:text-[120px] text-white/90">
+                <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
+                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
                     Skinstric
                   </h3>
-                  <h4 className="text-white/90 font-bold text-lg mb-1">
+                  <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold text-md">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Necessitatibus deleniti fugiat quo reiciendis voluptatem
                     itaque, labore assumenda aut quisquam ab.
                   </p>
-                  <div className="mb-2">html, tailwind, stripe, drizzle</div>
                   <div className="absolute flex text-white/90">
                     <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
                       <FaGithub />
