@@ -29,16 +29,25 @@ export const Projects = () => {
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus deleniti fugiat quo reiciendis voluptatem
-                    itaque, labore assumenda aut quisquam ab.
+                  <p className="text-white/90 font-bold mb-2 text-[10px] md:text-lg pr-2">
+                    This responsive SaaS language learning platform offers
+                    interactive lessons with AI voices, a dynamic heart and
+                    point system, gamification features like a leaderboard, and
+                    a premium tier for unlimited hearts via Stripe. It also
+                    includes a comprehensive admin dashboard for content
+                    management.
                   </p>
                   <div className="absolute flex text-white">
-                    <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://github.com/Guillermotrejo1"
+                    >
                       <FaGithub />
                     </Link>
-                    <Link className="mr-4 hover:text-green-500" href="https://lingo-lemon.vercel.app/">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://lingo-lemon.vercel.app/"
+                    >
                       <FaLink />
                     </Link>
                   </div>
@@ -64,15 +73,21 @@ export const Projects = () => {
                     Html, Css, javascript, Vue, Vuex
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus deleniti fugiat quo reiciendis voluptatem
-                    itaque, labore assumenda aut quisquam ab.
+                    Unleash the party magic! JEM Creations offers custom
+                    pinatas, balloon garlands, party favors, decorations, and
+                    personalized shirts to make your celebration unforgettable.
                   </p>
                   <div className="absolute flex text-white/90">
-                    <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://github.com/Guillermotrejo1"
+                    >
                       <FaGithub />
                     </Link>
-                    <Link className="mr-4 hover:text-green-500" href="https://liss-party.vercel.app/">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://liss-party.vercel.app/"
+                    >
                       <FaLink />
                     </Link>
                   </div>
@@ -97,16 +112,26 @@ export const Projects = () => {
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus deleniti fugiat quo reiciendis voluptatem
-                    itaque, labore assumenda aut quisquam ab.
+                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-lg">
+                    Elevated user experience by transforming a static React web
+                    app into an interactive website with animations,
+                    transitions, and carousels, enhancing user engagement.
+                    Facilitated dynamic data representation from a cloud server
+                    by processing API requests with Axios, implementing skeleton
+                    loading states, pagination, and dynamic routing, improving
+                    application responsiveness. zones
                   </p>
                   <div className="absolute flex text-white/90">
-                    <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://github.com/Guillermotrejo1"
+                    >
                       <FaGithub />
                     </Link>
-                    <Link className="mr-4 hover:text-green-500" href="https://guillermo-internship.vercel.app/">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://guillermo-internship.vercel.app/"
+                    >
                       <FaLink />
                     </Link>
                   </div>
@@ -131,16 +156,26 @@ export const Projects = () => {
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus deleniti fugiat quo reiciendis voluptatem
-                    itaque, labore assumenda aut quisquam ab.
+                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-lg">
+                    Experience the ultimate streaming platform, inspired by
+                    Netflix. This responsive web application showcases a vast
+                    library of movies and TV shows, complete with video previews
+                    and personalized recommendations. Users can create profiles
+                    and subscribe to plans seamlessly via Stripe, enjoying
+                    uninterrupted access to their favorite content across
+                    devices.
                   </p>
                   <div className="absolute flex text-white/90">
-                    <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://github.com/Guillermotrejo1"
+                    >
                       <FaGithub />
                     </Link>
-                    <Link className="mr-4 hover:text-green-500" href="https://netflix-clone-snowy-five.vercel.app/">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://netflix-clone-snowy-five.vercel.app/"
+                    >
                       <FaLink />
                     </Link>
                   </div>
@@ -162,19 +197,26 @@ export const Projects = () => {
                   <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
                     Summarist
                   </h3>
-                  <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
+                  <h4 className="text-white/90 font-bold text-[10px] md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus deleniti fugiat quo reiciendis voluptatem
-                    itaque, labore assumenda aut quisquam ab.
+                    Unlock the essence of bestselling books with audio
+                    summaries. Browse our vast library, log in to access
+                    exclusive content, and subscribe via Stripe for unlimited
+                    learning.
                   </p>
                   <div className="absolute flex text-white/90">
-                    <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://github.com/Guillermotrejo1"
+                    >
                       <FaGithub />
                     </Link>
-                    <Link className="mr-4 hover:text-green-500" href="https://summarist-mauve.vercel.app/">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://summarist-mauve.vercel.app/"
+                    >
                       <FaLink />
                     </Link>
                   </div>
@@ -199,16 +241,25 @@ export const Projects = () => {
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus deleniti fugiat quo reiciendis voluptatem
-                    itaque, labore assumenda aut quisquam ab.
+                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-lg">
+                    Built a real-time skin analysis platform leveraging OpenAI
+                    Vision API and Next.js, delivering 98% detection accuracy
+                    across diverse skin conditions. Crafted a responsive UI with
+                    TailwindCSS, driving 60% higher engagement and 40% boost in
+                    user retention through seamless and intuitive user
+                    experience.
                   </p>
                   <div className="absolute flex text-white/90">
-                    <Link className="mr-4 hover:text-green-500" href="https://github.com/Guillermotrejo1">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://github.com/Guillermotrejo1"
+                    >
                       <FaGithub />
                     </Link>
-                    <Link className="mr-4 hover:text-green-500" href="https://skinstric-puce.vercel.app/">
+                    <Link
+                      className="mr-4 hover:text-green-500"
+                      href="https://skinstric-puce.vercel.app/"
+                    >
                       <FaLink />
                     </Link>
                   </div>
