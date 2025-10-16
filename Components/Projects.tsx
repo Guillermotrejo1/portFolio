@@ -11,7 +11,7 @@ export const Projects = () => {
             Here are some of my <span className="text-green-500">projects</span>
           </h1>
           <ul className="flex flex-wrap justify-center gap-4 mb-10 p-6 rounded-3xl">
-            <li className="relative lg:mb-4 top-0 left-0 lg:w-[1000px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
+            <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
               <div className="mb-10 rounded-3xl shadow-xl shadow-green-800 h-full overflow-hidden">
                 <Image
                   src="/lingo1.png"
@@ -23,13 +23,13 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
+                  <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
                     Lingo
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-[10px] md:text-lg pr-2">
+                  <p className="text-white/90 font-bold mb-2 text-[10px] md:text-sm pr-2">
                     This responsive SaaS language learning platform offers
                     interactive lessons with AI voices, a dynamic heart and
                     point system, gamification features like a leaderboard, and
@@ -54,7 +54,7 @@ export const Projects = () => {
                 </div>
               </div>
             </li>
-            <li className="relative lg:mb-4 top-0 left-0 lg:w-[1000px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
+            <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
               <div className="mb-10 rounded-3xl shadow-xl shadow-green-800 h-full overflow-hidden">
                 <Image
                   src="/creation.png"
@@ -66,13 +66,13 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
+                  <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
                     Creations
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-sm">
                     Unleash the party magic! JEM Creations offers custom
                     pinatas, balloon garlands, party favors, decorations, and
                     personalized shirts to make your celebration unforgettable.
@@ -94,7 +94,7 @@ export const Projects = () => {
                 </div>
               </div>
             </li>
-            <li className="relative lg:mb-4 top-0 left-0 lg:w-[1000px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
+            <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
               <div className="mb-10 rounded-3xl shadow-xl shadow-green-800 h-full overflow-hidden">
                 <Image
                   src="/ultraverse.png"
@@ -106,13 +106,13 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
+                  <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
                     Internship
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-lg">
+                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-sm">
                     Elevated user experience by transforming a static React web
                     app into an interactive website with animations,
                     transitions, and carousels, enhancing user engagement.
@@ -138,7 +138,7 @@ export const Projects = () => {
                 </div>
               </div>
             </li>
-            <li className="relative lg:mb-4 top-0 left-0 lg:w-[1000px] rounded-3xl group transition duration-300 ease-in-out">
+            <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group transition duration-300 ease-in-out">
               <div className="mb-10 rounded-3xl shadow-xl shadow-green-800 h-full overflow-hidden">
                 <Image
                   src="/netflix1.png"
@@ -150,13 +150,13 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
+                  <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
                     Netflix
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-lg">
+                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-sm">
                     Experience the ultimate streaming platform, inspired by
                     Netflix. This responsive web application showcases a vast
                     library of movies and TV shows, complete with video previews
@@ -182,7 +182,7 @@ export const Projects = () => {
                 </div>
               </div>
             </li>
-            <li className="relative lg:mb-4 top-0 left-0 lg:w-[1000px] rounded-3xl group transition duration-300 ease-in-out">
+            <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group transition duration-300 ease-in-out">
               <div className="mb-10 rounded-3xl shadow-xl shadow-green-800 h-full overflow-hidden">
                 <Image
                   src="/summarist.png"
@@ -194,13 +194,13 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
+                  <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
                     Summarist
                   </h3>
                   <h4 className="text-white/90 font-bold text-[10px] md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-xs md:text-lg">
+                  <p className="text-white/90 font-bold mb-2 text-xs md:text-sm">
                     Unlock the essence of bestselling books with audio
                     summaries. Browse our vast library, log in to access
                     exclusive content, and subscribe via Stripe for unlimited
@@ -223,7 +223,7 @@ export const Projects = () => {
                 </div>
               </div>
             </li>
-            <li className="relative lg:mb-4 top-0 left-0 lg:w-[1000px] rounded-3xl group transition duration-300 ease-in-out">
+            <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group transition duration-300 ease-in-out">
               <div className="mb-10 rounded-3xl shadow-xl shadow-green-800 h-full overflow-hidden">
                 <Image
                   src="/skinstric.png"
@@ -235,13 +235,13 @@ export const Projects = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
                 <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-                  <h3 className="font-extrabold text-sm md:text-[120px] text-white/90 md:mb-16">
+                  <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
                     Skinstric
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
                     Html, Css, javascript, Vue, Vuex
                   </h4>
-                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-lg">
+                  <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-sm">
                     Built a real-time skin analysis platform leveraging OpenAI
                     Vision API and Next.js, delivering 98% detection accuracy
                     across diverse skin conditions. Crafted a responsive UI with
