@@ -1,11 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
+import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
+
+import { useTheme } from "next-themes";
 
 export const Nav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  if (!mounted) return null;
+  function toggleDarkMode() {
+    setTheme(theme === "dark" ? "light" : "dark");
+    console.log(theme);
+  }
 
   function handleOpen() {
     setIsModalOpen(true);
@@ -16,7 +30,7 @@ export const Nav = () => {
   }
 
   return (
-    <nav className="flex justify-between items-center px-4 lg:max-w-[1280px] mb-4">
+    <nav className="flex justify-between items-center px-4 w-full mb-4">
       <div className="shrink-0 sticky">
         <Image
           className="pl-4 pt-4 object-contain filter invert"
@@ -27,7 +41,7 @@ export const Nav = () => {
         />
       </div>
       <button
-        className="text-5xl absolute right-6  lg:hidden"
+        className="text-5xl absolute right-6 lg:hidden"
         onClick={handleOpen}
       >
         <RxHamburgerMenu />
@@ -43,11 +57,7 @@ export const Nav = () => {
           >
             <IoMdClose />
           </button>
-          <ul
-            className={`flex flex-col gap-10 md:gap-4 font-bold text-5xl md:text-md space-x-4 items-center lg:flex-row ${
-              isModalOpen ? "flex" : "hidden"
-            } md:flex`}
-          >
+          <ul className="flex flex-col gap-10 md:gap-4 font-bold text-5xl md:text-md space-x-4 items-center lg:flex-row">
             <li className="hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out">
               <Link href="#projects">Projects</Link>
             </li>
@@ -57,10 +67,14 @@ export const Nav = () => {
             <li className="hover:scale-150 hover:text-white hover:animate-pulse transition-all duration-400 ease-out bg-green-500 px-4 py-2 rounded-full cursor-pointer">
               <Link href="/">Contact</Link>
             </li>
+            <button className="text-4xl" onClick={toggleDarkMode}>
+              <MdOutlineLightMode />
+              {theme === "dark" ? "Light Mode" : "Dark Mode"}
+            </button>
           </ul>
         </div>
       )}
-      <ul className="hidden md:flex flex-col gap-10 md:gap-4 font-bold md:text-md space-x-4 items-center lg:flex-row">
+      <ul className="hidden md:flex flex-col gap-10 md:gap-4 font-bold md:text-md space-x-4 items-center lg:flex-row mr-20">
         <li className="hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out">
           <Link href="#projects">Projects</Link>
         </li>
@@ -70,6 +84,9 @@ export const Nav = () => {
         <li className="hover:scale-150 hover:text-white hover:animate-pulse transition-all duration-400 ease-out bg-green-500 px-4 py-2 rounded-full cursor-pointer">
           <Link href="/">Contact</Link>
         </li>
+        <button className="absolute right-10 text-4xl" onClick={toggleDarkMode}>
+          {theme === "dark" ? <MdDarkMode /> : <MdOutlineLightMode />}
+        </button>
       </ul>
     </nav>
   );

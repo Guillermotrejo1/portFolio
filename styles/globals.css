@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -20,13 +20,17 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   color: white;
   background: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
+.dark body {
+  color: black;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+}
 
 @layer utilities {
   .text-balance {
