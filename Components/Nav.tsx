@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
-import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 import { useTheme } from "next-themes";
 
@@ -33,7 +33,7 @@ export const Nav = () => {
     <nav className="flex justify-between items-center px-4 w-full mb-4">
       <div className="shrink-0 sticky">
         <Image
-          className="pl-4 pt-4 object-contain filter invert"
+          className="pl-4 pt-4 object-contain filter invert dark:invert-0"
           src="/logo.svg"
           width={150}
           height={150}
@@ -58,18 +58,17 @@ export const Nav = () => {
             <IoMdClose />
           </button>
           <ul className="flex flex-col gap-10 md:gap-4 font-bold text-5xl md:text-md space-x-4 items-center lg:flex-row">
-            <li className="hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out">
+            <li className="hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out dark:text-white">
               <Link href="#projects">Projects</Link>
             </li>
-            <li className="hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out">
+            <li className="hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out dark:text-white">
               <Link href="#tech">Tech</Link>
             </li>
-            <li className="hover:scale-150 hover:text-white hover:animate-pulse transition-all duration-400 ease-out bg-green-500 px-4 py-2 rounded-full cursor-pointer">
+            <li className="hover:scale-150 hover:text-white hover:animate-pulse transition-all duration-400 ease-out dark:text-white bg-green-500 px-4 py-2 rounded-full cursor-pointer">
               <Link href="/">Contact</Link>
             </li>
             <button className="text-4xl" onClick={toggleDarkMode}>
-              <MdOutlineLightMode />
-              {theme === "dark" ? "Light Mode" : "Dark Mode"}
+              {theme === "dark" ? <MdOutlineDarkMode className="text-white" /> : <MdOutlineLightMode />}
             </button>
           </ul>
         </div>
@@ -85,7 +84,7 @@ export const Nav = () => {
           <Link href="/">Contact</Link>
         </li>
         <button className="absolute right-10 text-4xl" onClick={toggleDarkMode}>
-          {theme === "dark" ? <MdDarkMode /> : <MdOutlineLightMode />}
+          {theme === "dark" ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
         </button>
       </ul>
     </nav>

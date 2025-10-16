@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="w-full flex flex-wrap items-center justify-center mx-auto md:px-12 md:flex-row mb-6">
         <div className="flex flex-col items-center sm:flex sm:flex-col sm:items-center mb-14 lg:mb-0 lg:w-1/2 lg:block">
           <h1
-            className="max-w-xl text-[2.9rem] lg:text-[8rem] leading-none text-white font-extrabold text-center lg:text-5xl
+            className="max-w-xl text-[2.9rem] lg:text-[8rem] leading-none text-white dark:text-black font-extrabold text-center lg:text-5xl
          lg:text-left lg:leading-tight mb-5"
           >
             <span className="text-green-500">Hey,</span> I&apos;m Guillermo
