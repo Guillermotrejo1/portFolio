@@ -36,7 +36,7 @@ export const Hero = () => {
             </Link>
             <Link
               className="bg-green-500 p-2 rounded-lg"
-              href="https://docs.google.com/document/d/1kL50Jt0I6c4yjiWplSOFyXCfCZph5x9I/edit?usp=sharing&ouid=117883606353969352178&rtpof=true&sd=true"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               title="View Resume"
