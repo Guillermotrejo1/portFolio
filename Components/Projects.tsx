@@ -4,7 +4,7 @@ import { FaGithub, FaLink } from "react-icons/fa6";
 
 export const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="relative z-10">
       <div className="flex items-center justify-center">
         <div className="flex-col">
           <h1 className="text-center text-3xl mb-6">

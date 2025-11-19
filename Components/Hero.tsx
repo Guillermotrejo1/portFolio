@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 export const Hero = () => {
   return (
-    <section id="home" className="py-5 h-screen">
+    <section id="home" className="relative z-10 py-5 h-screen">
       <div className="w-full flex flex-wrap items-center justify-center mx-auto md:px-12 md:flex-row mb-6">
         <div className="flex flex-col items-center sm:flex sm:flex-col sm:items-center mb-14 lg:mb-0 lg:w-1/2 lg:block">
           <h1

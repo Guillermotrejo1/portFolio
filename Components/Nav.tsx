@@ -30,7 +30,7 @@ export const Nav = () => {
   }
 
   return (
-    <nav className="flex justify-between items-center px-4 w-full mb-4">
+    <nav className="relative z-10 flex justify-between items-center px-4 w-full mb-4">
       <div className="shrink-0 sticky">
         <Image
           className="pl-4 pt-4 object-contain filter invert dark:invert-0"

@@ -37,3 +37,14 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Floating pulse animation for landed notes */
+@keyframes float-pulse {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.04); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+.animate-float-pulse {
+  animation: float-pulse 3.2s ease-in-out infinite;
+}

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const Footer = () => {
   return (
-    <footer className="bg-black p-[6%] ">
+    <footer className="relative z-10 bg-black p-[6%] ">
         <div className="flex flex-col items-center">
           <figure className="mb-14">
             <Image 
