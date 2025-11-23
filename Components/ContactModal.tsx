@@ -40,10 +40,9 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
     const publicKey = '6lwnRd44-s_j_aSGk';   // <-- Replace with your EmailJS public key
 
     const templateParams = {
-      from_name: name,
-      from_email: email,
+      user_name: name,
+      user_email: email,
       message: message,
-      to_name: 'Guillermo',
     };
 
     emailjs
