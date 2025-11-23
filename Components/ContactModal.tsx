@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -11,7 +12,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
   const [message, setMessage] = useState('');
   const [mounted, setMounted] = useState(false); // for slide animation
   const [render, setRender] = useState(isOpen); // keep mounted for close animation
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   useEffect(() => {
     if (isOpen) {
@@ -33,12 +34,31 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus('loading');
-    setTimeout(() => {
-      setStatus('success');
-      setName('');
-      setEmail('');
-      setMessage('');
-    }, 1500);
+
+    const serviceID = 'service_rzy4r1w';
+    const templateID = 'template_64znxc8'; // <-- Replace with your EmailJS template ID
+    const publicKey = '6lwnRd44-s_j_aSGk';   // <-- Replace with your EmailJS public key
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_name: 'Guillermo',
+    };
+
+    emailjs
+      .send(serviceID, templateID, templateParams, publicKey)
+      .then(
+        () => {
+          setStatus('success');
+          setName('');
+          setEmail('');
+          setMessage('');
+        },
+        () => {
+          setStatus('error');
+        }
+      );
   }
 
   function closeModal() {
@@ -98,6 +118,20 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
               <p className="text-sm sm:text-base text-neutral-300">
                 Thank you for reaching out. I will review your message and get back to you soon.
               </p>
+            </div>
+          ) : status === 'error' ? (
+            <div className="flex flex-col items-center text-center gap-4 sm:gap-6">
+              <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-red-500 flex items-center justify-center text-white text-3xl sm:text-5xl font-bold">✕</div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-red-500">Failed to Send</h3>
+              <p className="text-sm sm:text-base text-neutral-300">
+                Something went wrong. Please try again or contact me directly.
+              </p>
+              <button
+                onClick={() => setStatus('idle')}
+                className="bg-green-500 hover:bg-green-400 text-black font-semibold rounded-md py-2 px-6 text-sm transition-colors"
+              >
+                Try Again
+              </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-5">
