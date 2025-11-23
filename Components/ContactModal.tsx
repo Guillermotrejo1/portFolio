@@ -70,10 +70,17 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
             I craft clean, performant, and visually engaging experiences. I&apos;d love to connect! 🚀 Hit me up and let&apos;s turn your ideas into something EPIC! 💥
           </p>
           <div className="flex flex-wrap gap-2 md:gap-3 text-xs sm:text-sm font-semibold">
-            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Frontend</span>
-            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Animation</span>
-            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">UI/UX</span>
-            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Performance</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Html</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Css</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">React</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Firebase</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">NextJS</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Redux</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">TailwindCSS</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">NodeJS</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Javascript</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Typescript</span>
+            <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Drizzle</span>
           </div>
         </div>
         {/* Right Side */}
@@ -123,7 +130,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   value={message}
                   onChange={e => setMessage(e.target.value)}
                   className="bg-neutral-900 border border-neutral-700 rounded-md px-3 py-2 text-sm sm:text-base resize-none focus:outline-none focus:border-green-500 transition-colors"
-                  placeholder="Lets Chat..."
+                  placeholder="Lets Connect..."
                 />
               </label>
               <button
