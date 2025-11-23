@@ -67,7 +67,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight">Let&apos;s Collaborate</h2>
           <p className="text-sm sm:text-base md:text-xl font-medium">
-            I craft clean, performant, and visually engaging experiences. Drop a line and we can explore bringing your ideas to life.
+            I craft clean, performant, and visually engaging experiences. I&apos;d love to connect! 🚀 Hit me up and let&apos;s turn your ideas into something EPIC! 💥
           </p>
           <div className="flex flex-wrap gap-2 md:gap-3 text-xs sm:text-sm font-semibold">
             <span className="px-2 sm:px-3 py-1 rounded-full bg-black/10">Frontend</span>
