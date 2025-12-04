@@ -47,11 +47,11 @@ export const Hero = () => {
         </div>
         <div className="w-full flex items-center justify-center lg:w-1/2">
           <Image
-            className="lg:ml-4 rounded-full aspect-square w-80 h-80 lg:w-[500px] lg:h-[500px] mx-auto"
-            src="/ME.jpg"
+            className="lg:ml-4 rounded-full aspect-square w-80 h-80 lg:w-[500px] lg:h-[500px] mx-auto border border-green-500"
+            src="/introPic.png"
             alt="Me"
-            width={1002}
-            height={748}
+            width={4377}
+            height={6400}
           />
         </div>
       </div>
