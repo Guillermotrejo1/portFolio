@@ -46,13 +46,17 @@ export const Hero = () => {
           </div>
         </div>
         <div className="w-full flex items-center justify-center lg:w-1/2">
-          <Image
-            className="lg:ml-4 rounded-full aspect-square w-80 h-80 lg:w-[500px] lg:h-[500px] mx-auto border border-green-500"
-            src="/introPic.png"
-            alt="Me"
-            width={4377}
-            height={6400}
-          />
+          <div className="relative group">
+            <Image
+              className="lg:ml-4 rounded-full aspect-square w-80 h-80 lg:w-[500px] lg:h-[500px] mx-auto border-2 border-green-500/60 relative z-10 shadow-[0_8px_32px_rgba(34,197,94,0.25)] hover:shadow-[0_12px_48px_rgba(34,197,94,0.35)] hover:scale-[1.02] transition-all duration-300 ease-out ring-4 ring-green-500/10 hover:ring-green-500/20"
+              src="/introPic.png"
+              alt="Me"
+              width={4377}
+              height={6400}
+            />
+            {/* Subtle gradient backdrop */}
+            <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-green-500/20 to-emerald-500/20 blur-2xl group-hover:blur-3xl transition-all duration-300"></div>
+          </div>
         </div>
       </div>
     </section>
