@@ -82,7 +82,7 @@ export const Nav = () => {
       >
         <RxHamburgerMenu />
       </button>
-      <ul className="hidden md:flex flex-col gap-10 md:gap-4 font-bold md:text-md space-x-4 items-center lg:flex-row mr-20">
+      <ul className="hidden lg:flex flex-col gap-10 md:gap-4 font-bold md:text-md space-x-4 items-center lg:flex-row mr-20">
         <li className="hover:scale-150 hover:text-green-500 transition-all duration-300 ease-out">
           <Link href="#projects">Projects</Link>
         </li>
