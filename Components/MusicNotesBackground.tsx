@@ -11,19 +11,23 @@ interface Note {
 }
 
 export const MusicNotesBackground: React.FC = () => {
+  // All notes rendered in the fixed background layer
   const [notes, setNotes] = useState<Note[]>([]);
+  // Current page scroll; drives all note movement
   const [scrollY, setScrollY] = useState(0);
+  // Absolute Y position where notes should "land" (near Tech section bottom)
   const [landingY, setLandingY] = useState<number | null>(null);
+  // Absolute Y position used to start fading near Projects end
   const [projectsBottomY, setProjectsBottomY] = useState<number | null>(null);
 
   useEffect(() => {
-    // Helper to compute landing position near the bottom of the tech section
+    // Compute landing position from #tech section in document coordinates
     const computeLanding = (): number | null => {
       const tech = document.getElementById('tech');
       if (!tech) return null;
       const rect = tech.getBoundingClientRect();
       const scrollTop = window.scrollY || window.pageYOffset;
-      return rect.top + scrollTop + rect.height - 120; // land a bit above bottom
+      return rect.top + scrollTop + rect.height - 120; // tweak 120 to raise/lower landing line
     };
 
     const computeProjectsBottom = (): number | null => {
@@ -34,15 +38,15 @@ export const MusicNotesBackground: React.FC = () => {
       return rect.top + scrollTop + rect.height;
     };
 
-    // Generate random notes (start above viewport, spread horizontally)
+    // Generate notes with randomized spawn + motion personality
     const generatedNotes: Note[] = Array.from({ length: 20 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
-      // start above the screen up to one viewport height
+      // spawn above viewport so notes "fall in" as user scrolls
       y: -Math.random() * (window.innerHeight + 200),
-      speed: 0.2 + Math.random() * 0.5,
+      speed: 0.2 + Math.random() * 0.5, // parallax depth: bigger = moves faster
       rotation: Math.random() * 360,
-      scale: 1 + Math.random() * 1.5,
+      scale: 1 + Math.random() * 1.5, // bigger note => stronger horizontal drift later
       type: Math.floor(Math.random() * 5), // 5 types (bass removed)
     }));
     setNotes(generatedNotes);
@@ -105,49 +109,50 @@ export const MusicNotesBackground: React.FC = () => {
     </svg>
   ];
 
-  // easing for deceleration near landing (easeOutCubic)
+  // Ease out cubic: fast at start, slows toward target
   const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
+  // Utility to keep values inside a safe range
   const clamp = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v));
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
       {notes.map((note) => {
-        // If we don't have a landing target yet, fall linearly with scroll
+        // Vertical movement
         let yPx: number;
         if (landingY == null) {
+          // Before target is known, simple linear parallax fall
           yPx = note.y + scrollY * note.speed;
         } else {
-          const target = landingY - 40; // small margin above ground
-          const travel = Math.max(100, target - note.y);
-          const linear = clamp((scrollY * note.speed) / travel, 0, 1);
-          const eased = easeOut(linear);
+          const target = landingY - 40; // tweak 40 for gap above landing line
+          const travel = Math.max(100, target - note.y); // minimum travel prevents hyper-fast snaps
+          const linear = clamp((scrollY * note.speed) / travel, 0, 1); // 0..1 progress toward landing
+          const eased = easeOut(linear); // decelerate near landing
           yPx = note.y + eased * travel;
-          // prevent crossing the landing target
+          // Hard stop: never pass below landing target
           if (yPx > target) yPx = target;
         }
 
-        // Smoothly fade out approaching the end of Projects
+        // Base fade as user nears end of Projects section
         let opacity = 1;
         if (projectsBottomY != null) {
-          const offset = 100; // start fade a bit early
-          const fadeRange = 200; // px over which to fade to 0
+          const offset = 100; // increase to start fade earlier
+          const fadeRange = 200; // fade distance in px
           const fadeStart = projectsBottomY - offset - fadeRange;
           const t = clamp((scrollY - fadeStart) / fadeRange, 0, 1);
           opacity = 1 - t;
         }
 
-        // As notes approach the Tech Stack landing target, reduce visibility further
+        // Additional fade as notes approach landing area
         if (landingY != null) {
-          const fadeEnd = landingY - 40; // where notes should be fully faded
-          const fadeStart = fadeEnd - 250; // start fading 250px above landing
+          const fadeEnd = landingY - 40; // fully faded by landing line
+          const fadeStart = fadeEnd - 250; // fade window size before landing
           const t = clamp((yPx - fadeStart) / (fadeEnd - fadeStart), 0, 1);
-          // Fade from fully visible to invisible before landing
           const nearOpacity = 1 - t;
-          opacity = Math.min(opacity, nearOpacity);
+          opacity = Math.min(opacity, nearOpacity); // combine both fades, keep the lower opacity
         }
-        // gentle horizontal drift based on scroll + note id
-        const driftAmp = 12 + note.scale * 10; // px
-        const driftPhase = (scrollY * note.speed) / 50 + note.id * 0.7;
+        // Horizontal sway to avoid perfectly straight falling lines
+        const driftAmp = 12 + note.scale * 10; // px amplitude
+        const driftPhase = (scrollY * note.speed) / 50 + note.id * 0.7; // offset each note so motion is de-synced
         const driftPx = Math.sin(driftPhase) * driftAmp;
 
         return (
@@ -160,7 +165,7 @@ export const MusicNotesBackground: React.FC = () => {
               transform: `translateX(${driftPx}px) rotate(${note.rotation}deg) scale(${note.scale})`,
               width: '60px',
               height: '60px',
-              transition: 'top 0.1s ease-out',
+              transition: 'top 0.1s ease-out', // smooths jumpy scroll deltas
               opacity,
               willChange: 'top, opacity, transform',
             }}
