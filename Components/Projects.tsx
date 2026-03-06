@@ -27,7 +27,7 @@ export const Projects = () => {
                     Lingo
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
-                    Html, Css, javascript, Vue, Vuex
+                    Nextjs, React, Drizzle, Stripe
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-[10px] md:text-sm pr-2">
                     This responsive SaaS language learning platform offers
