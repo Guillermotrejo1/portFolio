@@ -140,6 +140,18 @@ export const TechStack = () => {
               DRIZZLE
             </span>
           </div>
+          <div className="group flex flex-col items-center h-48">
+            <Image
+              src="/Three.js.png"
+              alt=""
+              className="hover:scale-110 transition-all duration-300 ease-out rounded-xl invert dark:invert-0"
+              width={100}
+              height={100}
+            />
+            <span className="text-lg font-medium hidden group-hover:block transition-all duration-500 ease-in-out mt-4">
+              THREE.JS
+            </span>
+          </div>
         </div>
       </div>
     </div>
