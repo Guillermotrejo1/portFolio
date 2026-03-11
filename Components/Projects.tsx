@@ -70,7 +70,7 @@ export const Projects = () => {
                     Creations
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
-                    Html, Css, javascript, Vue, Vuex
+                    React, Three.js, Redux Toolkit, Firebase, EmailJS, AOS,
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-xs md:text-sm">
                     Unleash the party magic! JEM Creations offers custom
@@ -110,7 +110,7 @@ export const Projects = () => {
                     Internship
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
-                    Html, Css, javascript, Vue, Vuex
+                    React, Firebase, Axios,
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-sm">
                     Elevated user experience by transforming a static React web
@@ -154,7 +154,7 @@ export const Projects = () => {
                     Netflix
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
-                    Html, Css, javascript, Vue, Vuex
+                    Next.js, React, TypeScript, Tailwind CSS, Firebase, Stripe, Recoil
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-sm">
                     Experience the ultimate streaming platform, inspired by
@@ -198,7 +198,7 @@ export const Projects = () => {
                     Summarist
                   </h3>
                   <h4 className="text-white/90 font-bold text-[10px] md:text-lg mb-1">
-                    Html, Css, javascript, Vue, Vuex
+                    Next.js, React, TypeScript, Tailwind CSS, Material UI, Redux Toolkit, Firebase, Stripe
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-xs md:text-sm">
                     Unlock the essence of bestselling books with audio
@@ -239,7 +239,7 @@ export const Projects = () => {
                     Skinstric
                   </h3>
                   <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
-                    Html, Css, javascript, Vue, Vuex
+                    Next.js, React, TypeScript, Tailwind CSS
                   </h4>
                   <p className="text-white/90 font-bold mb-2 text-[10px] pr-2 md:text-sm">
                     Built a real-time skin analysis platform leveraging OpenAI
