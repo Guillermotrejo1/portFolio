@@ -15,11 +15,24 @@ export const Hero = () => {
             <span className="text-green-500">Hey,</span> I&apos;m Guillermo
           </h1>
           <p className="px-4 md:px-0 text-sm max-w-xl text-center text-gray-500 lg:text-left lg:max-w-md lg:text-2xl mb-4">
-            Im a{" "}
-            <span className="text-green-500">Frontend Software Engineer</span>{" "}
-            with a strong passion for building web applications with great user
-            experiences. Here&apos;s a bit more
-            <span className="text-green-500"> about me</span>.
+            I am a {" "}
+            <span className="font-semibold text-green-400">Frontend Engineer</span>{" "}
+            who ships{" "}
+            <span className="font-semibold text-green-400">
+              AI-powered web applications
+            </span>{" "}
+            using <span className="font-semibold text-white dark:text-black">React</span>,{" "}
+            <span className="font-semibold text-white dark:text-black">Next.js</span>, and{" "}
+            <span className="font-semibold text-white dark:text-black">TypeScript</span> -
+            including a{" "}
+            <span className="font-semibold text-green-400">
+              skin analysis platform
+            </span>{" "}
+            achieving{" "}
+            <span className="font-semibold text-green-300">
+              98% detection accuracy
+            </span>{" "}
+            used in <span className="font-semibold text-green-300">production</span>.
           </p>
           <div className="flex text-xl gap-4 text-white">
             <Link
