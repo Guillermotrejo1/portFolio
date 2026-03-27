@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { FaInfoCircle } from "react-icons/fa";
 import { FaGithub, FaLink } from "react-icons/fa6";
 
 type Projects = {
@@ -68,7 +70,15 @@ const projects: Projects[] = [
   },
 ];
 
-const ProjectCard = ({ title, image, tech, description, github, live }: Projects) => {
+const ProjectCard = ({
+  title,
+  image,
+  tech,
+  description,
+  github,
+  live,
+}: Projects) => {
+  const [showInfo, setShowInfo] = useState(false);
   const techBadges = tech
     .split(",")
     .map((item) => item.trim())
@@ -99,14 +109,33 @@ const ProjectCard = ({ title, image, tech, description, github, live }: Projects
         </div>
       </div>
       <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
-        <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
-          <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
-            {title}
-          </h3>
+        <div
+          className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11"
+          onMouseLeave={() => setShowInfo(false)}
+        >
+          <div className="flex items-center gap-2">
+            <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
+              {title}
+            </h3>
+            <button
+              type="button"
+              className="block md:hidden text-green-300 hover:text-green-500 focus:outline-none"
+              aria-label="Show project description"
+              onClick={() => setShowInfo((v) => !v)}
+            >
+              <FaInfoCircle size={18} />
+            </button>
+          </div>
           <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
             {tech}
           </h4>
-          <p className="text-white/90 font-bold mb-2 text-[10px] md:text-sm pr-2">
+          <p
+            className={
+              "text-white/90 font-bold mb-2 text-xs md:text-sm pr-2 max-h-20 overflow-y-auto md:max-h-none md:overflow-visible " +
+              (showInfo ? "block" : "hidden") +
+              " md:block"
+            }
+          >
             {description}
           </p>
           <div className="absolute flex text-white">
