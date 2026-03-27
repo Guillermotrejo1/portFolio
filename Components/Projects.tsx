@@ -24,7 +24,7 @@ const projects: Projects[] = [
   {
     title: "Summarist",
     image: "/summarist.png",
-    tech: "Next.js, React, TypeScript, Tailwind CSS, Material UI, Redux Toolkit, Firebase, Stripe",
+    tech: "Next.js, React, TypeScript, Tailwind CSS, Material UI, Redux, Firebase, Stripe",
     description:
       "Unlock the essence of bestselling books with audio summaries. Browse our vast library, log in to access exclusive content, and subscribe via Stripe for unlimited learning.",
     github: "https://github.com/Guillermotrejo1",
@@ -42,7 +42,7 @@ const projects: Projects[] = [
   {
     title: "Creations",
     image: "/creation.png",
-    tech: "React, Three.js, Redux Toolkit, Firebase, EmailJS, AOS",
+    tech: "React, Three.js, Redux, Firebase, EmailJS, AOS",
     description:
       "Unleash the party magic! JEM Creations offers custom pinatas, balloon garlands, party favors, decorations, and personalized shirts to make your celebration unforgettable.",
     github: "https://github.com/Guillermotrejo1",
@@ -68,7 +68,13 @@ const projects: Projects[] = [
   },
 ];
 
-const ProjectCard = ({ title, image, tech, description, github, live, }: Projects) => {
+const ProjectCard = ({ title, image, tech, description, github, live }: Projects) => {
+  const techBadges = tech
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .slice(0, 4);
+
   return (
     <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
       <div className="mb-10 rounded-3xl shadow-xl shadow-green-800 h-full overflow-hidden">
@@ -79,6 +85,18 @@ const ProjectCard = ({ title, image, tech, description, github, live, }: Project
           width={1000}
           height={1000}
         />
+      </div>
+      <div className="absolute bottom-4 left-1/2 z-20 flex w-[calc(100%-2rem)] -translate-x-1/2 justify-center transition-opacity duration-300 group-hover:opacity-0">
+        <div className="flex flex-wrap items-center justify-center gap-2 rounded-xl border border-white/15 bg-black/55 px-3 py-2 backdrop-blur-sm">
+          {techBadges.map((badge) => (
+            <span
+              key={`${title}-${badge}`}
+              className="rounded-sm border border-green-400/35 bg-green-500/10 px-2.5 py-1 text-[10px] font-semibold text-green-200"
+            >
+              {badge}
+            </span>
+          ))}
+        </div>
       </div>
       <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
         <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11">
