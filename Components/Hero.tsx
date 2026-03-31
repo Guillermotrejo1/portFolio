@@ -49,7 +49,7 @@ export const Hero = () => {
             </Link>
             <Link
               className="bg-green-500 p-2 rounded-lg"
-              href="/resume.pdf"
+              href="/CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               title="View Resume"
