@@ -53,7 +53,7 @@ const projects: Projects[] = [
   {
     title: "Lingo",
     image: "/lingo1.png",
-    tech: "Nextjs, React, Drizzle, Stripe, NeonDb",
+    tech: "Nextjs, React, Drizzle, Tailwind CSS, Stripe, NeonDb",
     description:
       "This responsive SaaS language learning platform offers interactive lessons with AI voices, a dynamic heart and point system, gamification features like a leaderboard, and a premium tier for unlimited hearts via Stripe. It also includes a comprehensive admin dashboard for content management",
     github: "https://github.com/Guillermotrejo1",
@@ -83,7 +83,7 @@ const ProjectCard = ({
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean)
-    .slice(0, 4);
+    .slice(0, 5);
 
   return (
     <li className="relative lg:mb-4 top-0 left-0 lg:w-[600px] rounded-3xl group hover:bg-[#1c1d25] hover:opacity-55 transition duration-300 ease-in-out">
