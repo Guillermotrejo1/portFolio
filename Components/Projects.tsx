@@ -96,7 +96,7 @@ const ProjectCard = ({
           height={1000}
         />
       </div>
-      <div className="absolute bottom-4 left-1/2 z-20 flex w-[calc(100%-2rem)] -translate-x-1/2 justify-center transition-opacity duration-300 group-hover:opacity-0">
+      <div className="absolute bottom-4 left-1/2 z-20 flex w-[calc(100%-2rem)] -translate-x-1/2 justify-center transition-opacity duration-300 group-hover:opacity-0 group-hover:pointer-events-none">
         <div className="flex flex-wrap items-center justify-center gap-2 rounded-xl border border-white/15 bg-black/55 px-3 py-2 backdrop-blur-sm">
           {techBadges.map((badge) => (
             <span
@@ -138,7 +138,7 @@ const ProjectCard = ({
           >
             {description}
           </p>
-          <div className="mt-3 flex text-white">
+          <div className="relative z-30 mt-3 flex text-white">
             <Link className="mr-4 hover:text-green-500" href={github}>
               <FaGithub />
             </Link>
