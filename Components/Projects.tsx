@@ -37,7 +37,7 @@ const projects: Projects[] = [
     image: "/ultraverse.png",
     tech: "React, Firebase, Axios",
     description:
-      "Elevated user experience by transforming a static React web app into an interactive website with animations, transitions, and carousels, enhancing user engagement. Facilitated dynamic data representation from a cloud server by processing API requests with Axios, implementing skeleton loading states, pagination, and dynamic routing, improving application responsiveness. zones",
+      "Elevated user experience by transforming a static React web app into an interactive website with animations, transitions, and carousels, enhancing user engagement. Facilitated dynamic data representation from a cloud server by processing API requests with Axios, implementing skeleton loading states, pagination, and dynamic routing, improving application responsiveness.",
     github: "https://github.com/Guillermotrejo1",
     live: "https://guillermo-internship.vercel.app/",
   },
@@ -64,7 +64,7 @@ const projects: Projects[] = [
     image: "/netflix1.png",
     tech: "Next.js, React, TypeScript, Tailwind CSS, Firebase, Stripe, Recoil",
     description:
-      "Experience the ultimate streaming platform, inspired by Netflix. This responsive web application showcases a vast library of movies and TV shows, complete with video previews and personalized recommendations. Users can create profiles and subscribe to plans seamlessly via Stripe, enjoying uninterrupted access to their favorite content across devices",
+      "A Netflix-inspired streaming platform featuring a vast movie and TV library, video previews, and personalized recommendations. Users can create profiles and subscribe via Stripe for uninterrupted access across devices.",
     github: "https://github.com/Guillermotrejo1",
     live: "https://netflix-clone-snowy-five.vercel.app/",
   },
@@ -108,37 +108,37 @@ const ProjectCard = ({
           ))}
         </div>
       </div>
-      <div className="absolute top-0 left-0 w-full h-full rounded-3xl group-hover:bg-[#1c1d25] group-hover:opacity-75 transition duration-300 ease-in-out flex justify-center items-center">
+      <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center rounded-3xl transition duration-300 ease-in-out group-hover:bg-[#1c1d25] group-hover:opacity-75">
         <div
-          className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:animate-flip-up ml-11"
+          className="flex h-full w-full max-w-[32rem] flex-col justify-center px-6 py-6 opacity-0 transition duration-300 ease-in-out group-hover:animate-flip-up group-hover:opacity-100 md:px-8 md:py-8"
           onMouseLeave={() => setShowInfo(false)}
         >
           <div className="flex items-center gap-2">
-            <h3 className="font-extrabold text-sm md:text-[90px] text-white/90 md:mb-16">
+            <h3 className="font-extrabold leading-none text-sm text-white/90 md:mb-5 md:text-6xl lg:text-7xl">
               {title}
             </h3>
             <button
               type="button"
-              className="block md:hidden text-green-300 hover:text-green-500 focus:outline-none"
+              className="block md:hidden text-green-300 hover:text-green-500 focus:outline-none z-50"
               aria-label="Show project description"
               onClick={() => setShowInfo((v) => !v)}
             >
               <FaInfoCircle size={18} />
             </button>
           </div>
-          <h4 className="text-white/90 font-bold text-sm md:text-lg mb-1">
+          <h4 className="mb-1 text-sm font-bold text-white/90 md:text-lg">
             {tech}
           </h4>
           <p
             className={
-              "text-white/90 font-bold mb-2 text-xs md:text-sm pr-2 max-h-20 overflow-y-auto md:max-h-none md:overflow-visible " +
+              "mb-2 pr-2 text-xs font-bold text-white/90 max-h-20 overflow-y-auto md:min-h-[4.5rem] md:max-h-[8rem] md:overflow-hidden md:text-sm " +
               (showInfo ? "block" : "hidden") +
               " md:block"
             }
           >
             {description}
           </p>
-          <div className="absolute flex text-white">
+          <div className="mt-3 flex text-white">
             <Link className="mr-4 hover:text-green-500" href={github}>
               <FaGithub />
             </Link>
