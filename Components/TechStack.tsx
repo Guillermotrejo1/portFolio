@@ -2,12 +2,11 @@ import Image from "next/image";
 
 export const TechStack = () => {
   return (
-    <div className="container mb-10">
+    <div className="w-full mx-auto mb-10 px-4">
       <h1 className="flex justify-center text-3xl font-bold w-full mb-4 h-14">
         Tech Stack
       </h1>
-      <div className="flex flex-wrap justify-center items-center gap-4">
-        <div className="flex flex-wrap justify-center items-center gap-4">
+      <div className="mx-auto flex max-w-[1100px] flex-wrap justify-center items-center gap-4">
           <div className="group flex flex-col items-center h-48">
             <Image
               src="/html.png"
@@ -152,7 +151,6 @@ export const TechStack = () => {
               THREE.JS
             </span>
           </div>
-        </div>
       </div>
     </div>
   );
