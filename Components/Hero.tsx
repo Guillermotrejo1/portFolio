@@ -61,7 +61,7 @@ export const Hero = () => {
         <div className="w-full flex items-center justify-center lg:w-1/2">
           <div className="relative group">
             <Image
-              className="lg:ml-4 rounded-full aspect-square w-80 h-80 lg:w-[500px] lg:h-[500px] mx-auto border-2 border-green-500/60 relative z-10 shadow-[0_8px_32px_rgba(34,197,94,0.25)] hover:shadow-[0_12px_48px_rgba(34,197,94,0.35)] hover:scale-[1.02] transition-all duration-300 ease-out ring-4 ring-green-500/10 hover:ring-green-500/20"
+              className="lg:ml-4 rounded-full aspect-square w-80 h-80 lg:w-[500px] lg:h-[500px] xxl:w-[800px] xxl:h-[800px] mx-auto border-2 border-green-500/60 relative z-10 shadow-[0_8px_32px_rgba(34,197,94,0.25)] hover:shadow-[0_12px_48px_rgba(34,197,94,0.35)] hover:scale-[1.02] transition-all duration-300 ease-out ring-4 ring-green-500/10 hover:ring-green-500/20"
               src="/introPic.png"
               alt="Me"
               width={4377}
