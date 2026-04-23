@@ -9,12 +9,12 @@ export const Hero = () => {
       <div className="w-full flex flex-wrap items-center justify-center mx-auto md:px-12 md:flex-row mb-6">
         <div className="flex flex-col items-center sm:flex sm:flex-col sm:items-center mb-14 lg:mb-0 lg:w-1/2 lg:block">
           <h1
-            className="max-w-xl text-[2.9rem] lg:text-[6rem] xl:text-[8rem] leading-none text-white dark:text-black font-extrabold text-center
-         lg:text-left lg:leading-tight mb-5"
+            className="max-w-xl xxl:max-w-none text-[2.9rem] lg:text-[6rem] xl:text-[8rem] xxl:text-[12rem] leading-none text-white dark:text-black font-extrabold text-center
+            lg:text-left lg:leading-tight mb-5"
           >
             <span className="text-green-500">Hey,</span> I&apos;m Guillermo
           </h1>
-          <p className="px-4 md:px-0 text-sm max-w-xl text-center text-gray-500 lg:text-left lg:max-w-md lg:text-2xl mb-4">
+          <p className="px-4 md:px-0 text-sm max-w-xl xxl:max-w-[800px] xxl:text-3xl text-center text-gray-500 lg:text-left lg:max-w-md lg:text-2xl mb-4">
             I am a {" "}
             <span className="font-semibold text-green-400">Frontend Engineer</span>{" "}
             who ships{" "}
