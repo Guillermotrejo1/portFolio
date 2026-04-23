@@ -155,8 +155,8 @@ const ProjectCard = ({
 export const Projects = () => {
   return (
     <section id="projects" className="relative z-10">
-      <div className="flex items-center justify-center">
-        <div className="flex-col">
+      <div className="flex items-center justify-center min-h-screen scroll-mt-4 py-12">
+        <div className="flex-col min-h-screen">
           <h1 className="text-center text-3xl mb-6">
             Here are some of my <span className="text-green-500">projects</span>
           </h1>
