@@ -656,6 +656,352 @@
   color: #1a1a1a;
 }
 
+.portfolio-site .skinstric-mock {
+  max-width: 100%;
+  background: linear-gradient(180deg, #fdfefe 0%, #eef4ee 100%);
+}
+
+.portfolio-site .skinstric-mock .mock-body {
+  padding: 16px;
+}
+
+.portfolio-site .skinstric-mock .face-circ {
+  position: relative;
+  width: min(100%, 210px);
+  aspect-ratio: 1;
+  margin: 8px auto 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(16, 185, 129, 0.18), transparent 52%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.95) 0%, rgba(239, 246, 240, 0.95) 70%, rgba(226, 232, 230, 0.95) 100%);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75);
+}
+
+.portfolio-site .skinstric-mock .face-circ::before {
+  content: "";
+  position: absolute;
+  inset: 18% 24% 18% 24%;
+  border-radius: 999px;
+  background: radial-gradient(circle at 50% 30%, rgba(17, 24, 39, 0.08), rgba(17, 24, 39, 0.04) 60%, transparent 61%);
+  opacity: 0.9;
+}
+
+.portfolio-site .skinstric-mock .scan {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, transparent 43%, rgba(28, 198, 106, 0.2) 50%, transparent 57%, transparent 100%);
+  animation: scanSweep 2.4s ease-in-out infinite;
+}
+
+.portfolio-site .skinstric-mock .pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.portfolio-site .skinstric-mock .pill-row b {
+  font-size: 10px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: #eef4ef;
+  color: #1f2937;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.portfolio-site .skinstric-mock .pill-row .green {
+  color: #0f7a42;
+  background: #dcf7e6;
+}
+
+.portfolio-site .skinstric-mock .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.portfolio-site .skinstric-mock .row b {
+  color: #111827;
+}
+
+.portfolio-site .skinstric-mock .meter {
+  height: 8px;
+  border-radius: 999px;
+  background: #dbe5dd;
+  overflow: hidden;
+}
+
+.portfolio-site .skinstric-mock .meter i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #16a34a, #22c55e, #86efac);
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.35);
+}
+
+@keyframes scanSweep {
+  0%,
+  100% {
+    transform: translateY(-18%);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateY(18%);
+    opacity: 0.9;
+  }
+}
+
+.portfolio-site .clinical-mock {
+  max-width: 100%;
+  background: linear-gradient(180deg, #0d1a31 0%, #101c2f 100%);
+  color: #edf4ff;
+}
+
+.portfolio-site .clinical-mock .mock-body {
+  padding: 16px;
+  color: #edf4ff;
+}
+
+.portfolio-site .clinical-mock .topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.portfolio-site .clinical-mock h4,
+.portfolio-site .summarist-mock h4,
+.portfolio-site .lingo-mock h4 {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+}
+
+.portfolio-site .clinical-mock .day,
+.portfolio-site .summarist-mock span,
+.portfolio-site .lingo-mock .streak {
+  font-size: 10px;
+  color: #7a8aa6;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.portfolio-site .clinical-mock .kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.portfolio-site .clinical-mock .kpi {
+  border-radius: 12px;
+  padding: 10px 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.portfolio-site .clinical-mock .kpi .v {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 800;
+  color: #28e07d;
+  margin-bottom: 4px;
+}
+
+.portfolio-site .clinical-mock .kpi .k {
+  font-size: 9px;
+  color: #a8b4cb;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.portfolio-site .clinical-mock .chart {
+  height: 62px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(40, 224, 125, 0.12), rgba(40, 224, 125, 0.03));
+  border: 1px solid rgba(40, 224, 125, 0.12);
+}
+
+.portfolio-site .clinical-mock .chart svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.portfolio-site .clinical-mock .alerts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.portfolio-site .clinical-mock .alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 10px;
+  color: #edf4ff;
+}
+
+.portfolio-site .clinical-mock .alert.amber {
+  background: rgba(245, 184, 64, 0.08);
+}
+
+.portfolio-site .clinical-mock .alert.red {
+  background: rgba(239, 91, 91, 0.08);
+}
+
+.portfolio-site .summarist-mock {
+  max-width: 100%;
+  background: linear-gradient(180deg, #fffaf1 0%, #f4ead5 100%);
+}
+
+.portfolio-site .summarist-mock .mock-body {
+  padding: 16px;
+}
+
+.portfolio-site .summarist-mock .head,
+.portfolio-site .lingo-mock .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.portfolio-site .summarist-mock .head span {
+  color: #d97706;
+}
+
+.portfolio-site .summarist-mock .book {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  margin-bottom: 9px;
+}
+
+.portfolio-site .summarist-mock .cover {
+  width: 36px;
+  height: 48px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #8b5cf6, #c084fc);
+  flex-shrink: 0;
+}
+
+.portfolio-site .summarist-mock .cover.b2 {
+  background: linear-gradient(180deg, #0f172a, #334155);
+}
+
+.portfolio-site .summarist-mock .cover.b3 {
+  background: linear-gradient(180deg, #22c55e, #86efac);
+}
+
+.portfolio-site .summarist-mock .b-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.portfolio-site .summarist-mock .b-info b {
+  font-size: 12px;
+  color: #111827;
+}
+
+.portfolio-site .summarist-mock .b-info span {
+  font-size: 10px;
+  color: #6b7280;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.portfolio-site .summarist-mock .play {
+  color: #d97706 !important;
+  font-weight: 700 !important;
+}
+
+.portfolio-site .lingo-mock {
+  max-width: 100%;
+  background: linear-gradient(180deg, #f6fff9 0%, #e8f8ef 100%);
+}
+
+.portfolio-site .lingo-mock .mock-body {
+  padding: 16px;
+}
+
+.portfolio-site .lingo-mock .streak {
+  color: #10b981;
+}
+
+.portfolio-site .lingo-mock .lesson {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 11px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.portfolio-site .lingo-mock .lesson b {
+  font-size: 11px;
+  color: #111827;
+}
+
+.portfolio-site .lingo-mock .lesson.active {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.22);
+}
+
+.portfolio-site .lingo-mock .lesson.locked {
+  opacity: 0.72;
+}
+
+.portfolio-site .lingo-mock .check {
+  color: #10b981;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.portfolio-site .lingo-mock .progress {
+  height: 8px;
+  border-radius: 999px;
+  background: #dbece3;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.portfolio-site .lingo-mock .progress i {
+  display: block;
+  width: 62%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #10b981, #34d399, #86efac);
+}
+
 .portfolio-site .stack-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
