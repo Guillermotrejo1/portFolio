@@ -569,6 +569,29 @@
   padding-bottom: 2px;
 }
 
+@media (max-width: 1100px) {
+  .portfolio-site .project {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .portfolio-site .project .body {
+    padding: 26px 26px;
+    gap: 16px;
+  }
+
+  .portfolio-site .project h3 {
+    font-size: clamp(24px, 3.6vw, 28px);
+  }
+
+  .portfolio-site .project p {
+    font-size: 14.5px;
+  }
+
+  .portfolio-site .frame {
+    padding: 18px;
+  }
+}
+
 .portfolio-site .metric-row {
   display: flex;
   gap: 24px;
@@ -1461,12 +1484,31 @@
     max-width: 340px;
   }
 
+  .portfolio-site .badge-float {
+    position: absolute;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 1.2;
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    border-color: color-mix(in oklab, var(--line) 70%, transparent);
+    box-shadow: 0 8px 24px -16px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0.92;
+  }
+
+  .portfolio-site .badge-float .num {
+    font-size: 15px;
+  }
+
   .portfolio-site .badge-1 {
-    left: -10px;
+    top: 14%;
+    left: -6px;
   }
 
   .portfolio-site .badge-2 {
-    right: -10px;
+    bottom: 10%;
+    right: -6px;
   }
 }
 
@@ -1489,8 +1531,27 @@
   }
 
   .portfolio-site .project .preview {
+    aspect-ratio: auto;
     border-right: none;
     border-bottom: 1px solid var(--line);
+  }
+
+  .portfolio-site .project .body {
+    padding: 24px 20px;
+  }
+
+  .portfolio-site .project h3 {
+    font-size: clamp(22px, 6vw, 28px);
+  }
+
+  .portfolio-site .metric-row {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-site .project .links {
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .portfolio-site .stack-grid {
@@ -1510,6 +1571,55 @@
 }
 
 @media (max-width: 520px) {
+  .portfolio-site .hero {
+    padding-top: 56px;
+  }
+
+  .portfolio-site .section-head {
+    margin-bottom: 28px;
+  }
+
+  .portfolio-site .frame {
+    padding: 14px;
+  }
+
+  .portfolio-site .mock {
+    border-radius: 12px;
+  }
+
+  .portfolio-site .project .body {
+    padding: 18px 16px;
+  }
+
+  .portfolio-site .tags {
+    gap: 5px;
+  }
+
+  .portfolio-site .tag {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .portfolio-site .badge-float {
+    font-size: 11px;
+    padding: 6px 8px;
+    opacity: 0.86;
+  }
+
+  .portfolio-site .badge-float .num {
+    font-size: 13px;
+  }
+
+  .portfolio-site .badge-1 {
+    top: 12%;
+    left: -8px;
+  }
+
+  .portfolio-site .badge-2 {
+    bottom: 8%;
+    right: -8px;
+  }
+
   .portfolio-site .nav-links a:not(.pill) {
     display: none;
   }
