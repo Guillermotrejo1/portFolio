@@ -74,7 +74,7 @@ export function PortfolioPage() {
 
     setSending(true);
     try {
-      const response = await fetch("/api/send", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -83,7 +83,7 @@ export function PortfolioPage() {
         throw new Error("Request failed");
       }
       setForm(initialForm);
-      setToast({ type: "ok", msg: "Message sent. Guillermo will be in touch soon." });
+      setToast({ type: "ok", msg: "Message sent. I’ll be in touch soon." });
     } catch {
       setToast({ type: "fail", msg: "Send failed. Please email guillermotrejo.dev@gmail.com directly." });
     } finally {
