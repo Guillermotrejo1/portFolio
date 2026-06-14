@@ -408,7 +408,7 @@ export function PortfolioPage() {
         <div className="modal-card" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle" style={{ fontFamily: "var(--font-inter)" }}>
           <button type="button" className="modal-close" onClick={() => setModalOpen(false)} aria-label="Close contact form"><FiX /></button>
           <h3 className="modal-title" id="emailModalTitle">Start the <em className="serif" style={{ fontFamily: "var(--font-serif)", color: "var(--accent)" }}>conversation.</em></h3>
-          <p className="modal-sub">Send a message directly. Guillermo typically responds within one business day.</p>
+          <p className="modal-sub">Send a message directly. I usually respond within one business day.</p>
 
           <form onSubmit={submitContact}>
             <div className="modal-fields-row">

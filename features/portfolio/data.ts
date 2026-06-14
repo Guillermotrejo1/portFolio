@@ -37,7 +37,7 @@ export const projects: PortfolioProject[] = [
       { value: "+60%", label: "Engagement" },
       { value: "<2s", label: "Processing" },
     ],
-    liveUrl: "#",
+    liveUrl: "https://skinstric-puce.vercel.app/",
     githubUrl: "https://github.com/Guillermotrejo1",
     frameClass: "skinstric",
   },
@@ -48,7 +48,7 @@ export const projects: PortfolioProject[] = [
     description:
       "Healthcare operations dashboard for nursing floors with live KPIs, occupancy, lab results, and triaged alerts from a Node.js REST API.",
     tags: ["Next.js", "React", "TypeScript", "Node.js", "TailwindCSS", "REST API"],
-    liveUrl: "#",
+    liveUrl: "https://clinical-ten.vercel.app/",
     githubUrl: "https://github.com/Guillermotrejo1",
     frameClass: "clinical",
   },
@@ -59,7 +59,7 @@ export const projects: PortfolioProject[] = [
     description:
       "Subscription book-summary app with Stripe checkout, Firebase Auth, Firestore-backed library, and audio playback for non-fiction summaries.",
     tags: ["Next.js", "TypeScript", "Firebase", "Firestore", "Stripe"],
-    liveUrl: "#",
+    liveUrl: "https://summarist-mauve.vercel.app/",
     githubUrl: "https://github.com/Guillermotrejo1",
     frameClass: "summarist",
   },
@@ -70,7 +70,7 @@ export const projects: PortfolioProject[] = [
     description:
       "Language learning platform with auth, progress tracking, in-app purchases, and Stripe premium tiers backed by NeonDB serverless Postgres.",
     tags: ["Next.js", "TypeScript", "TailwindCSS", "NeonDB", "Stripe"],
-    liveUrl: "#",
+    liveUrl: "https://lingo-lemon.vercel.app/",
     githubUrl: "https://github.com/Guillermotrejo1",
     frameClass: "lingo",
   },
