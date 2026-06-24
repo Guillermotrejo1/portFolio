@@ -1253,10 +1253,17 @@
 
 .portfolio-site .contact-card-btn {
   width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
   appearance: none;
   cursor: pointer;
   color: inherit;
   font: inherit;
+  justify-content: center;
+}
+
+.portfolio-site .contact-card-btn > div:last-child {
+  text-align: center;
 }
 
 .portfolio-site .contact-card .ic {

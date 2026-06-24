@@ -376,10 +376,10 @@ export function PortfolioPage() {
           <h2 style={{ fontFamily: "var(--font-inter)" }}>Let&apos;s build <em className="serif" style={{ fontFamily: "var(--font-serif)", color: "var(--accent)" }}>together</em>.</h2>
           <p style={{ fontFamily: "var(--font-inter)" }}>Open to full-time and contract frontend roles. Based in San Marcos, TX and available across the US.</p>
           <div className="contact-grid" style={{ fontFamily: "var(--font-inter)" }}>
-            <button type="button" className="contact-card contact-card-btn" onClick={() => setModalOpen(true)}>
-              <div className="ic"><FiMail /></div>
-              <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>Email</div><div className="val">guillermotrejo.dev@gmail.com</div></div>
-            </button>
+            <Link href="/Cv.docx.pdf" className="contact-card" target="_blank" rel="noopener noreferrer">
+              <div className="ic"><FiArrowUpRight /></div>
+              <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>Resume</div><div className="val">Open PDF</div></div>
+            </Link>
             <Link href="https://github.com/Guillermotrejo1" className="contact-card" target="_blank" rel="noopener noreferrer">
               <div className="ic"><IoLogoGithub /></div>
               <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>GitHub</div><div className="val">@Guillermotrejo1</div></div>
@@ -388,6 +388,15 @@ export function PortfolioPage() {
               <div className="ic"><IoLogoLinkedin /></div>
               <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>LinkedIn</div><div className="val">guillermo-trejo</div></div>
             </Link>
+            <button
+              type="button"
+              className="contact-card contact-card-btn"
+              onClick={() => setModalOpen(true)}
+              style={{ gridColumn: "1 / -1" }}
+            >
+              <div className="ic"><FiMail /></div>
+              <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>Email</div><div className="val">guillermotrejo.dev@gmail.com</div></div>
+            </button>
           </div>
           <div style={{ marginTop: 32, fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--muted)" }}>(737) 212-2547 · San Marcos, TX</div>
         </div>
