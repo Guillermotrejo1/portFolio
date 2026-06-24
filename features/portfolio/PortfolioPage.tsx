@@ -376,7 +376,7 @@ export function PortfolioPage() {
           <h2 style={{ fontFamily: "var(--font-inter)" }}>Let&apos;s build <em className="serif" style={{ fontFamily: "var(--font-serif)", color: "var(--accent)" }}>together</em>.</h2>
           <p style={{ fontFamily: "var(--font-inter)" }}>Open to full-time and contract frontend roles. Based in San Marcos, TX and available across the US.</p>
           <div className="contact-grid" style={{ fontFamily: "var(--font-inter)" }}>
-            <Link href="/Cv.docx.pdf" className="contact-card" target="_blank" rel="noopener noreferrer">
+            <Link href="/CV.pdf" className="contact-card" target="_blank" rel="noopener noreferrer">
               <div className="ic"><FiFileText /></div>
               <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>Resume</div><div className="val">View Resume</div></div>
             </Link>
