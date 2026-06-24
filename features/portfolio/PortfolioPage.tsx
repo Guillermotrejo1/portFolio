@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
 import { FormEvent, useEffect, useMemo, useState } from "react";
-import { FiArrowUpRight, FiMail, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { FiArrowUpRight, FiFileText, FiMail, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { experience, projects, stack } from "@/features/portfolio/data";
 
@@ -377,8 +377,8 @@ export function PortfolioPage() {
           <p style={{ fontFamily: "var(--font-inter)" }}>Open to full-time and contract frontend roles. Based in San Marcos, TX and available across the US.</p>
           <div className="contact-grid" style={{ fontFamily: "var(--font-inter)" }}>
             <Link href="/Cv.docx.pdf" className="contact-card" target="_blank" rel="noopener noreferrer">
-              <div className="ic"><FiArrowUpRight /></div>
-              <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>Resume</div><div className="val">Open PDF</div></div>
+              <div className="ic"><FiFileText /></div>
+              <div><div className="lab" style={{ fontFamily: "var(--font-mono)" }}>Resume</div><div className="val">View Resume</div></div>
             </Link>
             <Link href="https://github.com/Guillermotrejo1" className="contact-card" target="_blank" rel="noopener noreferrer">
               <div className="ic"><IoLogoGithub /></div>
