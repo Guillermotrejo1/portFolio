@@ -1325,6 +1325,9 @@
   background: linear-gradient(180deg, color-mix(in oklab, var(--bg) 96%, var(--accent-soft)), var(--bg));
   box-shadow: 0 35px 80px -35px rgba(0, 0, 0, 0.5);
   padding: 36px;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   transform: translateY(18px) scale(0.98);
   transition: transform 0.28s ease;
 }
