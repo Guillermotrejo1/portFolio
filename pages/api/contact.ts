@@ -29,13 +29,13 @@ export default async function handler(
     return res.status(500).json({ ok: false, error: "Missing CONTACT_TO_EMAIL" });
   }
 
-  if (!process.env.RESEND_FROM_EMAIL) {
-    return res.status(500).json({ ok: false, error: "Missing RESEND_FROM_EMAIL" });
+  if (!process.env.CONTACT_FROM_EMAIL) {
+    return res.status(500).json({ ok: false, error: "Missing CONTACT_FROM_EMAIL" });
   }
 
   try {
-    await resend.emails.send({
-      from: `Portfolio Contact <${process.env.RESEND_FROM_EMAIL}>`,
+    const { error } = await resend.emails.send({
+      from: `Portfolio Contact <${process.env.CONTACT_FROM_EMAIL}>`,
       to: process.env.CONTACT_TO_EMAIL,
       replyTo: email,
       subject: `New message from ${name}: ${subject}`,
@@ -48,6 +48,11 @@ export default async function handler(
         <p>${String(message).replace(/\n/g, "<br />")}</p>
       `,
     });
+
+    if (error) {
+      console.error("Resend rejected email:", error);
+      return res.status(500).json({ ok: false, error: error.message });
+    }
 
     return res.status(200).json({ ok: true });
   } catch (error) {
